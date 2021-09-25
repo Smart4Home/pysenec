@@ -112,6 +112,7 @@ class Senec:
             "PWR_UNIT": {"POWER_L1": "", "POWER_L2": "", "POWER_L3": ""},
             "PM1OBJ1": {"FREQ": "", "U_AC": "", "I_AC": "", "P_AC": "", "P_TOTAL": ""},
             "PM1OBJ2": {"FREQ": "", "U_AC": "", "I_AC": "", "P_AC": "", "P_TOTAL": ""},
+            "WALLBOX": {"APPARENT_CHARGING_POWER": "", "MAX_TOTAL_CURRENT_BY_GRID": "", "L1_USED": "", "L2_USED": "", "L3_USED": "", "L1_CHARGING_CURRENT": "", "L2_CHARGING_CURRENT": "", "L3_CHARGING_CURRENT": "", "EV_CONNECTED": "", "MIN_CHARGING_CURRENT": ""},
         }
 
         async with self.websession.post(self.url, json=form) as res:
