@@ -24,7 +24,11 @@ class Senec:
     def raw_status(self) -> dict:
         "Raw dict with all information"
         return self._raw
-
+    
+    @property
+    def wb_consumption(self) -> float:
+        return self._raw["WALLBOX"]["APPARENT_CHARGING_POWER"]    
+    
     @property
     def house_power(self) -> float:
         return self._raw["ENERGY"]["GUI_HOUSE_POW"]
