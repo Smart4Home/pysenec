@@ -26,8 +26,8 @@ class Senec:
         return self._raw
     
     @property
-    def wb_consumption(self) -> float:
-        return self._raw["WALLBOX"]["APPARENT_CHARGING_POWER"]    
+    def max_total_current_by_grid(self) -> float:
+        return self._raw["WALLBOX"]["MAX_TOTAL_CURRENT_BY_GRID"]    
     
     @property
     def house_power(self) -> float:
